@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as process from 'process';
-// import chalk from 'chalk';
+import * as _ from 'lodash';
 const chalk = require('chalk');
 
 const generateComponent = (componentName: string) => {
@@ -46,12 +46,16 @@ const templates = {
   
     const ${name} = () => {
       return (
-        <div>${name}</div>
+        <div className="${name}">${name}</div>
       )
     }
     
     export default ${name}`,
-  scss: (name: string) => ``,
+  scss: (name: string) => {
+    const kebabName = _.kebabCase(name);
+    return `.${kebabName} {
+}`;
+  },
 };
 
 const errorHandler = (err: any) => {
