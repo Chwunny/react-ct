@@ -1,6 +1,6 @@
 {
   "name": "react-ct",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package to generate react component files through the CLI, similar to the way Angular does things",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
