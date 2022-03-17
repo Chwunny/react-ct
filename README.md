@@ -8,7 +8,6 @@ Note: Please install this package globally for best compatibility
 
 ## Example usage
 
---- 
 
 `rct -gc componentName`  
 
@@ -20,7 +19,6 @@ Example: `rct -gc Components/HomePage/componentName`
 
 ## Output
 
----
 
 <span style="color:green; text-decoration:underline;">CREATE</span> /Users/user/Desktop/directory/app/src/ComponentName/index.tsx  
 <span style="color:green; text-decoration:underline;">CREATE</span> /Users/user/Desktop/directory/app/src/ComponentName/ComponentName.tsx  
@@ -57,15 +55,14 @@ _src/ComponentName/ComponentName.scss_
 <br>
 
 ## Options
----
 
 -v, --version : Returns currently installed version of react-ct
 
 -gc, --generate-component `"componentName"` : Generates component directory and corresponding files, converts given name to camelCase
 
+<br>
 
 ## To Do:
----
 
 - Implement compatibility for non TypeScript projects
 - Option to generate classical components instead of hooks
